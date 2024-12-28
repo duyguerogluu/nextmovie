@@ -1,11 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import '@/styles/reset.css';
+import '@/styles/global.css';
 
 
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="tr">
+      <body className='container'>
         {children}
       </body>
     </html>
