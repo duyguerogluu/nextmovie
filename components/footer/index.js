@@ -8,5 +8,5 @@ function Footer() {
     );
 }
 
-export default Index;
+export default Footer;
 
