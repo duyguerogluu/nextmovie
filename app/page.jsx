@@ -1,6 +1,10 @@
+import React from "react";
+import HomeContainer from "@/containers/home";
 
-export default function Home() {
+function  HomePage() {
   return (
-    <div>Hello</div>
+    <HomeContainer />
   );
 }
+
+export default HomePage;
