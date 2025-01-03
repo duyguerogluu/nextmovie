@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body >
+      <body className='container' >
         <Header/> 
           <main>{children}</main>
         <Footer/>
