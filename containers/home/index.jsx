@@ -1,7 +1,7 @@
 import React from 'react';
 import Movies from '@/mocks/movies.json';
 import Genres from '@/mocks/genres.json';
-import  { FeaturedMovie }  from '@/components/featured_movie';
+import { FeaturedMovie } from '@/components/featured_movie/index';
 import { Categories } from '@/components/categories';
 import { MoviesSection } from '@/components/movies_section';
 

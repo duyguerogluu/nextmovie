@@ -1,10 +1,10 @@
 import React from 'react';
-import   FeaturedMovie  from '@/components/featured_movie';
+import { FeaturedMovie } from '@/components/featured_movie/index';
 
-function MovieContainer(){
+function MovieContainer({ movie }) {
     return (
         <div>
-            <FeaturedMovie movie={movie} isCompact={false}/>;
+            <FeaturedMovie movie={movie} isCompact={false}/>
          </div>
        
    ); 
