@@ -15,7 +15,7 @@ function MoviePage({params}) {
   const movieDetail = movies.results.find((movie) => movie.id === Number(params.id));
 
   if (!movieDetail) {
-    return <div>Film bulunamadı.</div>;
+    notFound();
   }
 
   return <MovieContainer movie={movieDetail} />;
