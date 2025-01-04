@@ -2,23 +2,18 @@
 
 import React, { useEffect, useState } from 'react';
 import MovieContainer from '@/containers/movie';
+import movies from '@/mocks/movies.json';
+import { Link, useParams } from 'react-router-dom';
 
-function MoviePage({ params }) {
-  const [movies, setMovies] = useState(null);
-
-  useEffect(() => {
-    fetch('/mocks/movies.json')
-      .then(response => response.json())
-      .then(data => setMovies(data))
-      .catch(error => console.error('Error loading movies:', error));
-  }, []);
-
-  if (!movies || !movies.results) {
-    return <div>Filmler yüklenemedi.</div>;
+function MoviePage({params}) {
+  
+  console.log("Movie ID:", params);  
+  if (!id) {
+    return <div>Parametreler eksik veya hatalı.</div>;
   }
 
-  const movieDetail = movies.results.find(movie => movie.id.toString() === params.id);
- 
+  const movieDetail = movies.results.find((movie) => movie.id === Number(params.id));
+
   if (!movieDetail) {
     return <div>Film bulunamadı.</div>;
   }
