@@ -8,7 +8,7 @@ import { Link, useParams } from 'react-router-dom';
 function MoviePage({params}) {
   
   console.log("Movie ID:", params);  
-  if (!id) {
+  if (!params.id) {
     return <div>Parametreler eksik veya hatalı.</div>;
   }
 
