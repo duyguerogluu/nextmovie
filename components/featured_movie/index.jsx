@@ -29,7 +29,7 @@ function FeaturedMovie({ movie, isCompact = true }) {
         <div className={styles.moviePosterOverlay}></div>
         <Image
           unoptimized
-          src={`https://media.istockphoto.com/id/1372681569/photo/hands-holding-a-film-slate-directing-a-movie-scene.jpg?s=612x612&w=0&k=20&c=9BdhPvpFLgmzGF44AUwZUKaQW4Q3tclAUcE3Zvac8IY=`}
+          src={`https://image.tmdb.org/t/p/original${poster_path}`}
           alt={title}
           fill
         />
