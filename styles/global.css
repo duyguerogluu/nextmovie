@@ -7,6 +7,7 @@ body {
 div[data-nextjs-scroll-focus-boundary] {
   height: 100%;
 }
+ 
 
 .container {
   display: grid;

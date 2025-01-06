@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import MovieContainer from '@/containers/movie';
 import movies from '@/mocks/movies.json';
 import { Link, useParams } from 'react-router-dom';
+import { notFound } from 'next/navigation';
 
 function MoviePage({params}) {
   
@@ -15,7 +16,7 @@ function MoviePage({params}) {
   const movieDetail = movies.results.find((movie) => movie.id== paramSync.id);
 
   if (!movieDetail) {
-    return <div>movie detail gelmedi</div>;
+    notFound();
   }
 
   return <MovieContainer movie={movieDetail} />;
