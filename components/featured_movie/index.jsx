@@ -32,6 +32,7 @@ function FeaturedMovie({ movie, isCompact = true }) {
           src={`https://image.tmdb.org/t/p/original${poster_path}`}
           alt={title}
           fill
+          style={{ objectFit: "cover", objectPosition: "top" }}
         />
       </div>
     </div>
