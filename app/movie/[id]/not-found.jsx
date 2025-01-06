@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 
-function Error() {
+function Movie404() {
   return (
     <div
       style={{
@@ -13,7 +12,7 @@ function Error() {
         flexDirection: "column",
       }}
     >
-      <h1>An error has occurred. Sorry for that! </h1>
+      <h1>We couldn&apos;t find the movie you looking for!</h1>
       <Link
         href="/"
         style={{ textDecoration: "underline", fontSize: 20, marginTop: 8 }}
@@ -24,4 +23,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default Movie404;
