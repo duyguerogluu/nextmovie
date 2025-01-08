@@ -5,11 +5,12 @@ import { FeaturedMovie } from '@/components/featured_movie/index';
 import { Categories } from '@/components/categories';
 import { MoviesSection } from '@/components/movies_section';
 
-function HomeContainer(){
+function HomeContainer({selectedCategory}){
     return (
         <div>
             <FeaturedMovie movie={Movies.results[0]} />
             <Categories categories={Genres.genres.slice(0, 6)}/>
+            <MoviesSection title="Popüler Filmler" movies={selectedCategory.movies} /> 
             <MoviesSection title="Popüler Filmler" movies={Movies.results.slice(0,6)} /> 
             <MoviesSection title="Favorilerin" movies={Movies.results.slice(6,13)} /> 
         </div>
