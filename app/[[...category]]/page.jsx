@@ -8,13 +8,13 @@ function  HomePage({params}) {
 
    let selectedCategory;
 
-   if (paramSync.category.length > 0) {
+   if (paramSync.category?.length > 0) {
     selectedCategory = true;
    }
 
   return (
     <HomeContainer selectedCategory= {{
-        id: params.category?.[0] ?? '',
+        id: paramSync.category?.[0] ?? '',
         movies: selectedCategory ? Movies.results.slice(0,7) : [],
     }}/>
   );
