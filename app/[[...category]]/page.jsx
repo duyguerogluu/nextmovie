@@ -6,7 +6,7 @@ function  HomePage({params}) {
    const paramSync = React.use(params);
    console.log(paramSync);
 
-   let selectedCategory;
+   let selectedCategory ;
 
    if (paramSync.category?.length > 0) {
     selectedCategory = true;
